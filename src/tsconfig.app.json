@@ -2,7 +2,15 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "types": []
+    "baseUrl": "./",
+    "module": "esnext",
+    "target": "es5",
+    "types": [],
+    "paths": {
+      "@angular/*": [
+        "../node_modules/@angular/*"
+      ]
+    }
   },
   "exclude": [
     "test.ts",
